@@ -1,0 +1,278 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+@import "https://fonts.googleapis.com/css?family=Roboto";
+
+.safetyHub {
+
+  background-color: #1A458A !important;
+
+  .container {
+    max-width: 700px;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .labelStyles {
+    margin: 30px 0 0 0;
+  }
+
+  .regionDropDown {
+    width: 200px;
+  }
+
+  .ProgramTypeDropDown {
+    width: 200px;
+  }
+
+  .labelDiv {
+    float: right;
+    padding-right: 20px;
+  }
+
+  .regionDiv {
+    float: left;
+    //padding-left: 30%;
+    //padding-left: 28.6%;
+    //padding-left: 24.6%;
+    padding-left: 3.6%;
+    //padding-top: 24px;
+    padding-top: 34px;
+    padding-bottom: 24px;
+  }
+
+
+  .programTypeDiv {
+    float: left;
+    padding-left: 20px;
+    //padding-top: 24px;
+    padding-top: 34px;
+    padding-bottom: 24px;
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background-color: $ms-color-themeDark;
+    padding: 20px;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+}
+
+:global {
+  @import "~office-ui-fabric-react/dist/css/fabric.css";
+
+  .CanvasZone>div {
+    max-width: 100% !important;
+  }
+
+  /*
+  .webPartContainer {
+    background: #f0f0f7 !important;
+    display: none !important;
+  }
+  */
+  /*
+  #spCommandBar {
+    display: none !important;
+  }
+
+  
+  */
+
+  #CommentsWrapper {
+    display: none !important;
+  }
+
+  .ms-Spinner {
+    //position        : fixed !important;
+    position: absolute !important;
+    z-index: 99 !important;
+    width: 100%;
+    height: 100%;
+    overflow: visible !important;
+    margin: auto !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    background-color: #ffffff;
+    opacity: 0.8;
+    font-weight: bold;
+  }
+
+  .ms-TooltipHost {
+    width: 100%;
+    text-align: justify;
+    font-size: 12px !important;
+  }
+
+  .ms-ComboBox-optionsContainer {
+
+    background: #1f56ac 0% 0% no-repeat padding-box !important;
+    box-shadow: 0px 3px 6px #00000029 !important;
+
+    border: 1px solid #0078D4 !important;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 2px !important;
+    opacity: 1 !important;
+    width: 260px !important;
+    padding: 4px !important;
+
+    button {
+      color: #ffffffb3 !important;
+      font-size: 14px !important;
+      line-height: 20px !important;
+      font-family: Roboto !important;
+
+      :hover {
+        color: #ffffff !important;
+        font-size: 14px !important;
+        line-height: 20px !important;
+        font-family: Roboto !important;
+      }
+    }
+
+    :hover {
+      background: #163c78 0% 0% no-repeat padding-box !important;
+      border-radius: 4px !important;
+      opacity: 1 !important;
+      color: #ffffff !important;
+      font-size: 14px !important;
+      line-height: 20px !important;
+      font-family: Roboto !important;
+    }
+  }
+
+  .ms-ComboBox-optionsContainer .is-checked {
+    background: #163c78 0% 0% no-repeat padding-box !important;
+    border-radius: 4px !important;
+    opacity: 1 !important;
+    color: #ffffff !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    font-family: Roboto !important;
+  }
+
+  .ms-ComboBox-optionsContainer .ms-ComboBox-optionText :hover {
+    color: #ffffff !important;
+  }
+
+  .SafetyHubFilter .ms-ComboBox-container .ms-ComboBox {
+    background: #1f56ac 0 0 no-repeat padding-box !important;
+    border-radius: 4px !important;
+    opacity: 1 !important;
+    width: 280px !important;
+    //border: 2px solid #0078D438 !important;
+
+  }
+
+  .SafetyHubFilter .ms-ComboBox-container .ms-Label {
+    color: #849CC4 !important;
+    font-weight: normal !important;
+    font-size: 12px !important;
+    font-family: roboto;
+    font-weight: bold !important;
+  }
+
+  .SafetyHubFilter .ms-ComboBox-container .ms-ComboBox::after {
+    border-radius: 4px !important;
+    //border: 2px solid #0078D438 !important;
+    border: 1px solid #0078D4 !important;
+  }
+
+  .SafetyHubFilter .ms-ComboBox-container .ms-ComboBox-Input {
+    background: #1f56ac 0 0 no-repeat padding-box !important;
+    color: #ffffff !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    font-family: Roboto !important;
+  }
+
+  .SafetyHubFilter .ms-ComboBox-container .ms-ComboBox-container .ms-ComboBox-optionsContainer .ms-Button--icon {
+    background: #1f56ac 0 0 no-repeat padding-box !important;
+    color: #ffffff !important;
+  }
+
+  .SafetyHubFilter .ms-ComboBox>button,
+  .SafetyHubFilter .ms-ComboBox>button:hover,
+  .SafetyHubFilter .ms-ComboBox>button>span,
+  .SafetyHubFilter .ms-ComboBox>button>span:hover {
+    background: #1f56ac 0 0 no-repeat padding-box !important;
+    color: #ffffff !important;
+  }
+
+  .SafetyHubFilter .ms-ComboBox-container .ms-Label {
+    padding-top: 0px !important;
+  }
+
+  .block-ui-container {
+    width: 1300px !important;
+    height: 1300px !important;
+  }
+
+  .block-ui-message-container {
+    top: 20% !important;
+    font-size: 25px !important;
+  }
+
+  .loading-bullet {
+    color: #ffffff !important;
+  }
+}

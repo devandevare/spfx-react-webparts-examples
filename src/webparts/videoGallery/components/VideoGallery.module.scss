@@ -1,0 +1,252 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import "https://fonts.googleapis.com/css?family=Roboto";
+
+
+.videoGallery {
+
+  .container {
+    max-width: 100%;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+    border-radius: 12px;
+    padding-top: 10px;
+  }
+
+  
+
+  .videoGalleryHeader {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .seeAllLabel {
+    display: inline;
+    padding-left: 20px !important;
+  }
+
+  .hrStyle {
+    max-width: 100%;
+    border-bottom: 1px solid #000;
+    border-top: 0px;
+  }
+
+  .videoGalleryDiv {
+    margin: 17px 17px 17px 17px;
+  }
+
+  .next-arrow {
+    display: inline;
+    font-size:10px;
+    font-weight: bold;
+    float: right;
+    padding: 5px;
+    margin-right: 10px;
+  }
+
+  .play-button {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 60px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+  }
+  
+  .play-button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .play-button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 16.5px;
+    left: 40px;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 12.5px 0 12.5px 20px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+  }
+  
+  .close-video::before {
+    content: '✖';
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    padding: 25px;
+    z-index: 1;
+    line-height: .7;
+    display: block;
+    color: #fff;
+  }
+
+  .errorDiv {
+    color: #ffffff;
+    background: #0e2851 0 0 no-repeat padding-box;
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background-color: $ms-color-themeDark;
+    padding: 20px;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+}
+
+
+:global{
+  @import '~react-image-gallery/styles/scss/image-gallery.scss';
+  @import '~react-image-gallery/styles/css/image-gallery.css';
+  .image-gallery-svg{
+    height: 34px !important;
+    width: 20px !important;
+  }
+  .image-gallery-content .image-gallery-slide .image-gallery-image {
+    max-height: calc(52vh - 80px);
+    height: calc(52vh - 80px);
+}
+
+.fullscreen.image-gallery-content, .fullscreen .image-gallery-slide, .fullscreen .image-gallery-image,
+.fullscreen .videogallerycontent{
+  max-height: calc(100vh - 80px) !important;
+  height: calc(100vh - 80px) !important;  
+}
+
+/*.image-gallery-thumbnails{
+  max-height: 12vh;
+  height: 12vh;
+}
+*/
+.image-gallery-thumbnail-image{
+  height: 10vh !important;
+}
+.videogallerycontent{
+  max-height: calc(52vh - 80px);
+  height: calc(52vh - 80px);
+  width: 100%;
+}
+.fullscreen .videogallerycontent video {
+  max-height: calc(100vh - 80px) !important;
+  height: calc(100vh - 80px) !important;  
+}
+.image-gallery-left-nav, .image-gallery-right-nav{
+  padding: 10px 10px !important;
+}
+.modalheader {
+  // eslint-disable-next-line deprecation/deprecation
+  //theme.fonts.xLargePlus,
+  //{
+  flex       : 1 1 auto;
+  border-top : 4px solid #0078d4;
+  color      : black;
+  display    : flex;
+  align-items: center;
+  font-weight: bold;
+  padding    : 12px 12px 14px 24px;
+  //position   : fixed;
+  //}
+}
+
+.modalCloseIcon {
+  color      : black;
+  margin-left: auto !important;
+
+  //margin-top: 4px;
+  margin-right: 2px;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.modalFotter {
+  flex       : 4 4 auto;
+  padding    : 0 24px 24px 24px;
+  margin-left: auto !important;
+  text-align : right;
+  //position   : fixed;
+}
+
+.warningModalContainer {
+  width: 150px;
+}
+
+.warningModalHeader {
+  font-size: 15px;
+}
+
+.warningModalContent {
+  padding: 0 0 0 25px;
+}
+
+.okayButton {
+  width: 50px;
+}
+
+}

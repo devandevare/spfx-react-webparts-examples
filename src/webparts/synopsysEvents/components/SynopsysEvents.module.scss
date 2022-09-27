@@ -1,0 +1,419 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+@import "https://fonts.googleapis.com/css?family=Roboto";
+
+.synopsysEvents {
+  padding: 26px !important;
+  border-radius: 20px;
+  opacity: 1;
+  background: #0078d4 0% 0% no-repeat padding-box;
+  box-shadow: 0px 16px 16px #00000066;
+
+  .container {
+    max-width: 700px;
+    //margin: 0px auto;
+    //box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    //border: 2px solid black;
+    //border-radius: 12px;
+    // padding: 10px 0px;
+    //    height: 54vh;
+    height: 59vh;
+  }
+
+  .maindiv {
+    padding-left: 30px !important;
+    background-color: red !important;
+  }
+
+  .webpartHeader {
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    font-weight: 500 !important;
+    color: #fff;
+  }
+
+  // .eventDate {
+  //   font-size: 12px;
+  //   color: black;
+  //   //float     : right;
+  //   text-align: center;
+  // }
+
+  .seeAllDiv {
+    //margin: 0px -10px -5px -10px!important;
+    float: right;
+  }
+
+  .stackclass {
+    padding: 0px !important;
+  }
+
+  .stackclass {
+    padding: 0px !important;
+  }
+
+  .seeAllEvents {
+    border: 1px solid #ffb71b;
+    line-height: 11px;
+    border-radius: 25px;
+    padding: 8px 16px;
+    font-family: roboto !important;
+  }
+
+  .seeAllEvents a {
+    color: #ffffff !important;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: roboto !important;
+  }
+
+  .noDataFound {
+    text-align: center;
+    font-weight: bold;
+    padding: 37px 20px 65px 20px;
+    color: #ffffff;
+    font-family: Roboto !important;
+  }
+
+  .eventsHeader {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  /*
+  .seeAllEvents {
+  display: inline;
+    padding-left: 20px !important;
+  }
+*/
+  .next-arrow {
+    display: inline;
+    font-size: 10px;
+    font-weight: 700;
+    float: right;
+    padding: 5px;
+    margin-right: 10px;
+  }
+
+  .hrStyle {
+    max-width: 100%;
+    border-bottom: 1px solid #000;
+    border-top: 0px;
+  }
+
+  .newItemDiv {
+    //margin: 0px -10px -5px -10px!important;
+    float: right;
+  }
+
+  .addNewEvent {
+    padding: 4px 0px 4px 4px;
+  }
+
+  .addNewEvent a i {
+    color: #ffffff !important;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  .errorDiv {
+    color: #ffffff;
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background-color: $ms-color-themeDark;
+    padding: 20px;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+}
+
+:global {
+  @import "~office-ui-fabric-react/dist/css/fabric.css";
+
+  .ms-Icon--CircleAddition {
+    cursor: pointer !important;
+  }
+
+  .eventDiv {
+    //margin: 5px 0 9px 0px !important;
+    padding: 18px 0px !important;
+    border-bottom: 2px solid #2189d9 !important;
+    margin-top: 0px !important;
+  }
+
+  .eventDivLast {
+    padding: 18px 0px !important;
+    margin-top: 0px !important;
+  }
+
+  .eventDayandDate {
+    padding: 5px;
+    float: right;
+    font-size: 0.9rem;
+    font-weight: 700;
+    //width: 20%!important;
+    border: 1px solid #000;
+    //margin: 0px 5px 0px 5px;
+    display: inline;
+    min-width: 60px !important;
+    width: 60px !important;
+    max-width: 60px !important;
+    display: none;
+  }
+
+  .eventSection {
+    //margin           : 15px 0px 15px 15px;
+    //margin: 7px 0 7px 0px;
+    float: right;
+    display: inline;
+    margin-left: 0px !important;
+  }
+
+  .eventTitle {
+    /* text-decoration: none;
+    cursor: pointer;
+    color: rgb(3, 120, 124);
+    font-weight: 600;
+*/
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: roboto;
+  }
+
+  .eventDay {
+    font-size: 14px;
+    color: black;
+    float: left;
+    text-align: center;
+  }
+
+  .eventDate {
+    font-size: 12px;
+    color: black;
+    text-align: center;
+  }
+
+  .eventDateandDay {
+    color: #2D3653 !important;
+    font-size: 13px;
+    line-height: 16px;
+    font-family: 'Roboto' !important;
+    font-weight: bold;
+    padding-bottom: 6px !important;
+  }
+
+  .eventDateandDayIMP {
+    color: #113164 !important;
+    background-color: #ffffff !important;
+    border: 1px solid #113164 !important;
+    font-size: 13px;
+    line-height: 16px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    padding: 5px !important;
+    width: max-content;
+    border-radius: 3px;
+    margin-bottom: 5px;
+
+  }
+
+
+  .newLine {
+    clear: both;
+    border-top: 0px solid;
+    border-bottom: 1px solid;
+    margin: 3px;
+  }
+
+  .eventRepeatIcon {
+    font-weight: bold;
+    color: #ffffff;
+    //padding    : 25px;
+    //width: 10% !important;
+    //line-height: 51px;
+    text-align: right;
+    margin-left: 10px;
+  }
+
+  .eventRepeatIconIMP {
+    font-weight: bold;
+    color: #113164;
+    //padding    : 25px;
+    //width: 10% !important;
+    //line-height: 51px;
+    text-align: right;
+    margin-left: 10px;
+  }
+
+  /* .EventsMainContainer{
+    padding-left: 30px !important;
+    background-color: red !important;
+  }
+  */
+
+  .iconDiv {
+    display: inline-flex;
+  }
+
+  .modalheader {
+    // eslint-disable-next-line deprecation/deprecation
+    //theme.fonts.xLargePlus,
+    //{
+    flex: 1 1 auto;
+    border-top: 4px solid #0078d4;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding: 12px 12px 14px 24px;
+    //position   : fixed;
+    //}
+  }
+
+  .newItemSpan {
+    font-size: 20px;
+  }
+
+  .modalCloseIcon {
+    color: black;
+    margin-left: auto !important;
+
+    //margin-top: 4px;
+    margin-right: 2px;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  .eventBodyDiv {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 400px;
+  }
+
+  .EventModalbody {
+    flex: 4 4 auto;
+    padding: 0 24px 24px 24px;
+    //overflow-y  : hidden;
+    width: 400px;
+    height: 950px;
+
+  }
+
+  .modalFotter {
+    flex: 4 4 auto;
+    padding: 0 24px 24px 24px;
+    margin-left: auto !important;
+    text-align: right;
+    //position   : fixed;
+  }
+
+  .addItemsRow1 {
+    display: inline;
+  }
+
+  .saveButton {
+    margin-right: 10px;
+  }
+
+  .metadataFieldDiv {
+    margin: 10px 0px 0px 0px;
+  }
+
+  .eventMessageBarDiv {
+    width: 400px;
+    margin: 15px 0px 15px 25px;
+  }
+
+  .allDayEventLabel {
+    margin: 15px 0 0 0;
+  }
+
+  .markAsImpLabel {
+    margin: 15px 0 0 0;
+  }
+
+  .checkbox {
+    border: 1px solid black !important;
+    padding: 7px !important;
+    border-radius: 2px !important;
+  }
+
+  // .dateTimePicker > .container {
+  //   display: -webkit-inline-box !important;
+  // }
+
+  // .ms-DatePicker {
+  //   margin: 0 15px 0 0 !important;
+  //   width: 240px !important;
+  // }
+
+  // .row .timeRow {
+  //   margin-top: 0px !important;
+  // }
+}

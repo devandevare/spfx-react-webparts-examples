@@ -1,0 +1,486 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+@import "https://fonts.googleapis.com/css?family=Roboto";
+
+.announcements {
+  padding: 26px !important;
+  background: #113164 0% 0% no-repeat padding-box;
+  box-shadow: 0px 16px 16px #00000066;
+  border-radius: 20px;
+  opacity: 1;
+  .container {
+    max-width: 100%;
+    //margin: 0px auto;
+    //box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    //border: 2px solid black;
+    //border-radius: 12px;
+    //padding: 10px 0px;
+    //height: 63vh;
+    //height: 51vh;
+    height: 59vh;
+  }
+
+  .containerParentDiv{
+    padding: 0px;
+    padding-top: 18px !important;
+  }
+  .seeAllDiv {
+    //margin: 0px -10px -5px -10px!important;
+    float: right;
+  }
+  .newItemDiv {
+    //margin: 0px -10px -5px -10px!important;
+    float: right;
+  }
+  .mainContainer{
+    padding-left: 38px !important;
+    background-color: red !important;
+  }
+  .announcementMainDiv {
+    padding-bottom: 10px;
+  }
+
+  .announcementDescription {
+    width: 100%;
+    text-align: justify;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    color: #888d9c !important;
+  }
+  .hrStyle {
+    max-width: 100%;
+    border-bottom: 1px solid #000;
+    border-top: 0px;
+  }
+  .noDataFound {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 20px 65px 20px;
+    color: #ffffff;
+    font-family: Roboto !important;
+  }
+
+  .maindiv {
+    height: 53vh;
+    //overflow-y: auto;
+    //overflow-x: hidden;
+    background: white;
+  }
+
+  .announcementTitleDescDiv{
+    margin-left: 20px !important;
+    text-align: justify;
+  }
+
+  .eventDate {
+    font-size: 12px !important;
+    color: #FFFFFF !important;
+    //float: left !important;
+    text-align: center !important;
+    //width: 100% !important;
+    font-weight: normal !important;
+    font-family: Roboto;
+  }
+
+  .eventDateIMP {
+    font-size: 12px !important;
+    color: #113164!important;
+    font-weight: bold !important;    
+    text-align: center !important;    
+    font-family: Roboto;
+  }
+
+  .newLine {
+    clear: both;
+    border-top: 0px !important;
+    border-bottom: 1px solid !important;
+    margin: 3px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+  }
+
+  .announcementHeader {
+    font-size: 20px;
+    margin-bottom: 26px;
+    margin-top: 0px;
+  }
+
+  .announcementDiv {
+    border: 0px solid black;
+    // margin: 0px 10px 6px 10px;
+    //padding-left: 10px;
+    
+  }
+
+  .attachIcon {
+    margin: 0 0 0 5px;
+    color: rgb(3, 120, 124);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    display: inline-block;
+  }
+
+  .titleLabel {
+    //margin: 0 0 0 5px;
+    color: #ffffff;
+    display: inline;
+    line-height: 20px !important;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px !important;
+    word-spacing: 0px !important;
+    font-family: roboto !important;
+  }
+
+  .pDescription {
+    margin: 0 0 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+
+  .impSpan {
+    color: #dc3545 !important;
+    font-weight: 700 !important;
+    margin-left: 10px;
+    display: inline;
+  }
+
+  .seeAllAnnouncements {
+    border: 1px solid #ffb71b;
+    line-height: 11px;
+    border-radius: 25px;
+    padding: 8px 16px;
+    font-family: roboto !important;
+  }
+  .seeAllAnnouncements a {
+    color: #ffffff !important;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: roboto !important;
+  }
+
+  .addNewAnnouncement {
+    padding: 4px 0px 4px 4px;
+  }
+
+  .addNewAnnouncement a i{
+    color: #ffffff !important;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+ 
+
+  .stackclass {
+    padding: 0px !important;    
+  }
+
+  .announcementDateDiv{
+    //width: 0px !important;
+    text-align: center;    
+    display:flex;
+    overflow: hidden;
+    width: 48px;
+    flex-grow: 0 !important;
+    height: 48px;
+  }
+
+
+  .next-arrow {
+    display: inline;
+    font-size: 10px;
+    font-weight: 700;
+    float: right;
+    padding: 5px;
+    margin-right: 10px;
+  }
+
+  .errorDiv {
+    color: #ffffff;
+  }
+  
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background-color: $ms-color-themeDark;
+    padding: 20px;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+
+  
+}
+
+:global {
+  @import "~office-ui-fabric-react/dist/css/fabric.css";
+
+  .ms-Icon--CircleAddition{
+    cursor: pointer !important;
+  }
+  .AnnouncementWebpartHeader {
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    font-weight: 500!important;
+    color: #fff;
+}
+  .announcementTitleandDes {
+    float: left;
+    //width: 88% !important;
+    display: inline;
+    //padding-top: 2px !important;
+  }
+
+  .announcementDayandDate {
+   /* padding: 4px 4px;
+    float: right;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 20% !important;
+    border: 1px solid black;
+    
+    margin: 5px 5px 5px 5px;
+    display: inline;
+    min-width: 60px !important;
+    width: 60px !important;
+    max-width: 60px !important;
+*/
+    padding: 8px 13px;
+    /* float: right; */
+    font-size: .9rem;
+    font-weight: 700;
+    //width: 20%!important;
+    width: 31% !important;
+    //border: 1px solid #000;
+    /* margin: 5px; */
+    //display: inline;
+    /* min-width: 60px!important; */
+    width: 22px!important;
+    max-width: 20px!important;
+    border: 1px solid #FFB71B;
+    border-radius: 24px;
+  }
+
+  .announcementDayandDateIMP {
+  
+     padding: 8px 13px;     
+     font-size: .9rem;
+     font-weight: 700;
+     width: 22px !important;
+     //width: 20%!important;
+     //display: inline;
+     //width: 22px!important;
+     //max-width: 20px!important;
+     background-color: #ffffff !important;
+     color: #113164!important;
+     border: 1px solid #113164!important;
+     border-radius: 24px;
+   }
+
+   
+  .announcementDate {
+    font-size: 12px;
+    color: black;
+    //float     : right;
+    text-align: center;
+  }
+  .tooltip{
+    width: 100%;
+    text-align: justify;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    color: #888d9c !important;
+  }
+  .ms-Icon--Attach{
+    color: #ffffff !important;
+    cursor: pointer !important;
+  }
+/*
+  .AnnouncementMainContainer{
+    padding-left: 38px !important;
+    background-color: red !important;
+  }
+ */
+
+ .iconDiv {
+   display: inline-flex;
+ }
+
+ .modalheader {
+  // eslint-disable-next-line deprecation/deprecation
+  //theme.fonts.xLargePlus,
+  //{
+  flex       : 1 1 auto;
+  border-top : 4px solid #0078d4;
+  color      : black;
+  display    : flex;
+  align-items: center;
+  font-weight: bold;
+  padding    : 12px 12px 14px 24px;
+  //position   : fixed;
+  //}
+}
+
+.newItemSpan {
+  font-size: 20px;
+}
+
+.modalCloseIcon {
+  color      : black;
+  margin-left: auto !important;
+
+  //margin-top: 4px;
+  margin-right: 2px;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.AnnouncementBodyDiv {
+  overflow-x: hidden;
+  overflow-y:auto;
+  height: 400px;
+}
+
+.AnnouncementModalbody {
+  flex      : 4 4 auto;
+  padding   : 0 24px 24px 24px;
+  //overflow-y  : hidden;
+  width     : 400px;
+  height    : 650px;
+
+}
+
+.modalFotter {
+  flex       : 4 4 auto;
+  padding    : 0 24px 24px 24px;
+  margin-left: auto !important;
+  text-align : right;
+  //position   : fixed;
+}
+
+.addItemsRow1 {
+  display: inline;
+}
+
+.saveButton {
+  margin-right: 10px;
+}
+
+.metadataFieldDiv {
+  margin: 10px 0px 0px 0px;
+}
+
+.messageBarDiv {
+  width: 400px;
+  margin: 20px 0px 15px 25px;
+}
+
+.markAsImpLabel {
+  margin: 15px 0 0 0;
+}
+
+.checkbox {
+  border: 1px solid black  !important;
+  padding: 7px !important;
+  border-radius: 2px !important;
+}
+
+.uploadDocumentLabel {
+  margin: 15px 0 0 0;
+}
+
+.dropzoneDiv {
+  //border: 1px solid black;
+  //margin: 0 0 0 15px;
+  padding: 0px 10px 0 0;
+  width: 95%;
+}
+
+.fileUpload {
+  border: 1px dashed #ccc !important;
+  font-size: 12px !important;
+  outline: 0 !important;
+  padding: 8px !important;
+  border-radius: 5px;
+  width: 100%;
+  display: inline-flex;
+}
+
+.dvFileName {
+  padding: 5px;
+  display: inline-flex;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  width: 97.5%;
+}
+
+.addAttachments {
+  //padding-Left: 10px;
+  color: rgb(3,120,124);
+}
+}

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "safety-hub-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/safetyHub/SafetyHubWebPart.js",
+          "manifest": "./src/webparts/safetyHub/SafetyHubWebPart.manifest.json"
+        }
+      ]
+    },
+    "left-navigation-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/leftNavigation/LeftNavigationWebPart.js",
+          "manifest": "./src/webparts/leftNavigation/LeftNavigationWebPart.manifest.json"
+        }
+      ]
+    },
+    "document-search-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/documentSearch/DocumentSearchWebPart.js",
+          "manifest": "./src/webparts/documentSearch/DocumentSearchWebPart.manifest.json"
+        }
+      ]
+    },
+    "picture-gallery-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/pictureGallery/PictureGalleryWebPart.js",
+          "manifest": "./src/webparts/pictureGallery/PictureGalleryWebPart.manifest.json"
+        }
+      ]
+    },
+    "video-gallery-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/videoGallery/VideoGalleryWebPart.js",
+          "manifest": "./src/webparts/videoGallery/VideoGalleryWebPart.manifest.json"
+        }
+      ]
+    },
+    "synopsys-events-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/synopsysEvents/SynopsysEventsWebPart.js",
+          "manifest": "./src/webparts/synopsysEvents/SynopsysEventsWebPart.manifest.json"
+        }
+      ]
+    },
+    "announcements-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/announcements/AnnouncementsWebPart.js",
+          "manifest": "./src/webparts/announcements/AnnouncementsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SafetyHubWebPartStrings": "lib/webparts/safetyHub/loc/{locale}.js",
+    "LeftNavigationWebPartStrings": "lib/webparts/leftNavigation/loc/{locale}.js",
+    "DocumentSearchWebPartStrings": "lib/webparts/documentSearch/loc/{locale}.js",
+    "PictureGalleryWebPartStrings": "lib/webparts/pictureGallery/loc/{locale}.js",
+    "VideoGalleryWebPartStrings": "lib/webparts/videoGallery/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "SynopsysEventsWebPartStrings": "lib/webparts/synopsysEvents/loc/{locale}.js",
+    "AnnouncementsWebPartStrings": "lib/webparts/announcements/loc/{locale}.js"
+  }
+}
